@@ -28,7 +28,6 @@ def handle_odd(x):
         left = add_one(left)
         return left + left[::-1][1:]
 
-
 def handle_even(x):
     n = len(x)
     left = x[:n // 2]
@@ -52,9 +51,6 @@ def solve(x):
     else:
         return handle_even(x)
 
-
-
-
 def main():
     data = Path("input.txt").read_text(encoding="utf-8")
     for line in data.splitlines():
@@ -70,7 +66,6 @@ def main():
         elif line:
             result = solve(line)
             print(f"{result}")
-
 
 if __name__ == "__main__":
     main()
