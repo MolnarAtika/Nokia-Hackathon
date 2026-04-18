@@ -65,11 +65,11 @@ def main():
             secondhalf = float(snippets[1])
             pow = str(math.pow(firsthalf, secondhalf))
             result = solve(pow)
-            print(f"A {line} következő palindromja: {result}")
+            print(f"{result}")
         
         elif line:
             result = solve(line)
-            print(f"A {line} következő palindromja: {result}")
+            print(f"{result}")
 
 
 if __name__ == "__main__":
